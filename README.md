@@ -1,4 +1,4 @@
-# 💫 About Me:
+#  Hello World!, I'm Sam,a Indian Software Delveloper 👋🏽:
 > I'm Currently Learning<br>> Interested in Machine Learning, Data Science, and Full-Stack Development<br>> Skilled in Python, Java ,Git ,C ,C++ and various ML libraries (Pandas, Scikit-learn, etc.)<br>> LinkedIn: https://www.linkedin.com/in/samranjithpaul/<br>> Email: samranjithpaul71@gmail.com
 
 
