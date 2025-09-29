@@ -1,4 +1,5 @@
 #  Hello World!, I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 <br><div align="center">
   <img height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  />
@@ -37,7 +38,7 @@ technical_background:
   ]
 hobbies: ["Gaming", "Cinema", "Art"]
 ```
-
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
   <br><div align="center">
   <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
   <img width="12" />
