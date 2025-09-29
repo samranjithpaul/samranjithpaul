@@ -1,4 +1,40 @@
 #  Hello World!, I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
+
+## 🧑‍💻 A Little Bit About Me and My Interests  
+
+```yaml
+name: Samranjith Paul
+located_in: India
+current_job: Student / Aspiring Developer
+education:
+  [
+    "Bachelor's in Electronics and Communication Engineering (in progress)",
+    "Self-Taught Web Developer and Designer",
+  ]
+company: Open to Opportunities
+
+fields_of_interests:
+  [
+    "Web Development",
+    "Data Science",
+    "Machine Learning",
+    "UI/UX",
+    "Game Development",
+    "DevOps",
+  ]
+
+technical_background:
+  [
+    "Frontend Development",
+    "Python Projects",
+    "Intern - Internet of Things",
+    "Electronics & Embedded Systems",
+  ]
+
+currently_learning: ["React", "Node.js", "Cloud Technologies"]
+2025 Goals: ["Build 10+ Projects", "Contribute to Open Source", "Master Full Stack Development"]
+hobbies: ["Gaming", "Cinema", "Art", "Skateboarding"]
+```
 > I'm Currently Learning<br>> Interested in Machine Learning, Data Science, and Full-Stack Development<br>> Skilled in Python, Java ,Git ,C ,C++ and various ML libraries (Pandas, Scikit-learn, etc.)<br>> LinkedIn: https://www.linkedin.com/in/samranjithpaul/<br>> Email: samranjithpaul71@gmail.com
 
   <br><div align="center">
