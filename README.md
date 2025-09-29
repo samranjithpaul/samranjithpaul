@@ -140,6 +140,18 @@ hobbies: ["Gaming", "Cinema", "Art"]
   </a>
 </div>
 
+<div align="left">
+  <a href="https://instagram.com/samranjithpaul" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo" style="background: linear-gradient(145deg, #FFD700, #C5B000, #FFD700); border: 1px solid #C5B000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 200, 0.7); border-radius: 4px;" />
+  </a>
+  <a href="https://linkedin.com/in/Samranjithpaul" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" style="background: linear-gradient(145deg, #FFD700, #C5B000, #FFD700); border: 1px solid #C5B000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 200, 0.7); border-radius: 4px;" />
+  </a>
+  <a href="mailto:samranjithpaul71@gmail.com">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo" style="background: linear-gradient(145deg, #FFD700, #C5B000, #FFD700); border: 1px solid #C5B000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 200, 0.7); border-radius: 4px;" />
+  </a>
+</div>
+
  <!--
 
 # 💻 Tech Stack:
