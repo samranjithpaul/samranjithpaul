@@ -1,7 +1,8 @@
 #  Hello World!, I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
 > I'm Currently Learning<br>> Interested in Machine Learning, Data Science, and Full-Stack Development<br>> Skilled in Python, Java ,Git ,C ,C++ and various ML libraries (Pandas, Scikit-learn, etc.)<br>> LinkedIn: https://www.linkedin.com/in/samranjithpaul/<br>> Email: samranjithpaul71@gmail.com
 
-  <br><div align="center">
+  <br>
+  <div align="side">
   <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=tailwind" height="60" alt="tailwindcss logo"  />
