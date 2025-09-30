@@ -38,6 +38,13 @@ technical_background:
     "Intern - Machine Learning",
   ]
 hobbies: ["Gaming", "Cinema", "Art"]
+
+fun_facts:
+  [
+    "Professional code copier—sometimes I even paste in the right place >_< ",
+    "Coffee keeps my code compiling",
+    "Can solve a Rubik’s cube faster than debugging a loop"
+  ]
 ```
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
