@@ -37,8 +37,8 @@ technical_background:
     "Intern - DevOps",
     "Intern - Machine Learning",
   ]
-hobbies: ["Gaming", "Cinema", "Art"]
 
+hobbies: ["Gaming", "Cinema", "Art"]
 fun_facts:
   [
     "Professional code copier—sometimes I even paste in the right place >_< ",
