@@ -8,9 +8,9 @@
 </div>
 
 
-<h3 align="center">
+
   <img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=true&vCenter=true&width=650&height=100&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22">
-</h3>
+
 
 
 </h3>
