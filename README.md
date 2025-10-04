@@ -11,7 +11,7 @@
 
 
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=true&vCenter=true&width=1000&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=1100&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity">
 </h3>
 
 
