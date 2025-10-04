@@ -8,8 +8,24 @@
 </div>
 
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=true&vCenter=true&width=650&height=100&lines=A+Student+%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93+and+a+Programming+Enthusiast+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB+from+India">
+  <!-- Dark Mode -->
+  <img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=true&vCenter=true&width=700&height=120&lines=~$+echo+%22Hello,+I+am+a+Student+%F0%9F%91%A8%F0%9F%8F%BB%F0%9F%8E%93%22&lines=~$+echo+%22and+a+Programming+Enthusiast+%F0%9F%91%A9%F0%9F%92%BB+from+India%22" class="dark-mode-img">
+
+  <!-- Light Mode -->
+  <img src="https://readme-typing-svg.herokuapp.com?color=%23000000&size=21&center=true&vCenter=true&width=700&height=120&lines=~$+echo+%22Hello,+I+am+a+Student+%F0%9F%91%A8%F0%9F%8F%BB%F0%9F%8E%93%22&lines=~$+echo+%22and+a+Programming+Enthusiast+%F0%9F%91%A9%F0%9F%92%BB+from+India%22" class="light-mode-img">
 </h3>
+
+<style>
+  /* Dark mode: show white text */
+  .dark-mode-img { display: block; }
+  .light-mode-img { display: none; }
+
+  @media (prefers-color-scheme: light) {
+    .dark-mode-img { display: none; }
+    .light-mode-img { display: block; }
+  }
+</style>
+
 
 
 
