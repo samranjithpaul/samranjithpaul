@@ -7,7 +7,7 @@
   <!--<img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> -->
 </div>
 
-##  A Little Bit About Me and My Interests    <img src="https://user-images.githubusercontent.com/74038190/226190908-cd4e0a61-801d-4b69-955b-5bd82eb7c10e.gif" width="50">
+## <img src="https://user-images.githubusercontent.com/74038190/226190908-cd4e0a61-801d-4b69-955b-5bd82eb7c10e.gif" width="50"> A Little Bit About Me and My Interests    
 
 
 
