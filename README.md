@@ -12,27 +12,10 @@
 <h3 align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=1100&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity">
 </h3>
-
-
 <h3 align="center">
-  <!-- Dark Mode: White text -->
-  <img src="https://readme-typing-svg.herokuapp.com?color=%23FFFFFF&size=21&center=false&vCenter=true&width=1100&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22" class="dark-mode-img">
-
-  <!-- Light Mode: Black text -->
-  <img src="https://readme-typing-svg.herokuapp.com?color=%23000000&size=21&center=false&vCenter=true&width=1100&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22" class="light-mode-img">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FFFF&size=21&center=false&vCenter=true&width=1100&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22&duration=4000&repeat=0">
 </h3>
 
-<style>
-  /* Default: Dark mode */
-  .dark-mode-img { display: block; }
-  .light-mode-img { display: none; }
-
-  /* If system is in light mode, show light image */
-  @media (prefers-color-scheme: light) {
-    .dark-mode-img { display: none; }
-    .light-mode-img { display: block; }
-  }
-</style>
 
 
 
