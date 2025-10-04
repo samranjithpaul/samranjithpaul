@@ -7,6 +7,11 @@
   <img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> 
 </div>
 
+<h3 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%23FF5733&size=28&center=true&vCenter=true&width=700&height=120&lines=Hello,+I+am+a+Student&lines=And+a+Programming+Enthusiast&duration=3000&repeat=0">
+</h3>
+
+
 ## 🌀 A Little Bit About Me and My Interests    
 
 
