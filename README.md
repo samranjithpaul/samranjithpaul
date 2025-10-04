@@ -7,8 +7,11 @@
   <img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> 
 </div>
 
+<h3 align = "center"><img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=true&vCenter=true&width=650&height=100&lines=A+Student+%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93+and+a+Programming+Enthusiast+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB+from+India"></h3>
+
+
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=1000&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22&duration=4000&pause=1000&repeat=999">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=true&vCenter=true&width=1000&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity">
 </h3>
 
 
