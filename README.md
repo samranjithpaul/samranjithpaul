@@ -8,12 +8,12 @@
 </div>
 
 
-
-  <img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=true&vCenter=true&width=650&height=100&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22">
-
+  <img src="https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=21&center=false&vCenter=true&width=700&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit%22&lines=~$+echo+%22my+way+to+success+without+git+pushing+my+sanity%22&duration=4000&repeat=0">
 
 
-</h3>
+
+
+
 
 
 
