@@ -8,7 +8,7 @@
 </div>
 
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=700&height=140&lines=~$+echo+%3E+%22Currently+trying+to+%60git+commit%60%22&lines=~$+echo+%22my+way+to+success+without+%60git+push%60ing+my+sanity%22&duration=4000&repeat=0">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=700&height=140&lines=~$+echo+%3E+%22Currently+trying+to+%60git+commit%60%22&lines=~$+echo+%22my+way+to+success+without+%60git+push%60ing+my+sanity%22&duration=4000&repeat=999">
 </h3>
 
 
