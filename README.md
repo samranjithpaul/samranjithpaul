@@ -7,11 +7,9 @@
   <img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> 
 </div>
 
-
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=800&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22&lines=&lines=&duration=4000&pause=1000&repeat=999">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2300FF00&size=21&center=false&vCenter=true&width=1000&height=120&lines=~$+echo+%3E+%22Currently+trying+to+git+commit+my+way+to+success+without+git+pushing+my+sanity%22&duration=4000&pause=1000&repeat=999">
 </h3>
-
 
 
 
