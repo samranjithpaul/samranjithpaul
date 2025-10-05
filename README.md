@@ -1,7 +1,7 @@
 #  Hello World! I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
 
 
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
 
 
   <!--<img align='center' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' alt="gitemoji" width='300"'>-->
@@ -54,7 +54,7 @@ fun_facts:
   ]
 ```
 
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
 
 <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <!--- -- Skills Section ------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -138,7 +138,7 @@ fun_facts:
   
 </div>
 
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
 
 ## 🌐 Socials:
 
@@ -173,7 +173,7 @@ fun_facts:
   <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
 </picture>
 
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 <!--
