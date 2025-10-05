@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%2090S%20Sticker.gif" width="150" height="200">
+  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%2090S%20Sticker.gif" width="200" height="300">
 </div>
 
 
