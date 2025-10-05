@@ -22,7 +22,7 @@
 
 
 
-## 🌀 A Little Bit About Me and My Interests    
+## <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Video%20Game%20Spinning%20Sticker%20by%20Ali%20Graham.gif" width="40"> A Little Bit About Me and My Interests    
 
 
 
