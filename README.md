@@ -7,7 +7,7 @@
  
 
 <br><div align="center">
-  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%2090S%20Sticker.gif" width="300" height="300">
+  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker.gif" width="300" height="300">
 </div>
 
 ## <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Video%20Game%20Spinning%20Sticker%20by%20Ali%20Graham.gif" width="30"> A Little Bit About Me and My Interests    
