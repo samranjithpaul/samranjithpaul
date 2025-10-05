@@ -1,4 +1,4 @@
-#  Hello World! I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
+#  Hello World! I'm Sam, Software Dev by Day, Debugger by Night :
 
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
@@ -8,7 +8,7 @@
  
 
 <br><div align="center">
-   <img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> 
+   <img height="150" src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/data%20noise%20GIF%20by%20Nico%20Roxe.gif"  width="900"> 
 </div>
 
 
