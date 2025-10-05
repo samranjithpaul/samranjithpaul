@@ -2,10 +2,9 @@
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-<br><div align="center">
+
   <!--<img align='center' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' alt="gitemoji" width='300"'>-->
-  <img height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  width="150"> 
-</div>
+ 
 
 <div align="center">
   <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%2090S%20Sticker.gif" width="300" height="300">
