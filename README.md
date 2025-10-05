@@ -1,4 +1,4 @@
-#  Hello World! I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
+#  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/art%20smile%20Sticker%20by%20Friso%20Blankevoort.gif" width="40">Hello World! I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
