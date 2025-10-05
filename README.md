@@ -10,22 +10,7 @@
   <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%2090S%20Sticker.gif" width="300" height="300">
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Video%20Game%20Spinning%20Sticker%20by%20Ali%20Graham.gif" width="30"> A Little Bit About Me and My Interests    
-
-
-
 
 
 ```yaml
@@ -152,7 +137,7 @@ fun_facts:
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-## <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%20Click%20Sticker%20by%20Grelldenker.gif' width="40"> Socials:
+##  Socials <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%20Click%20Sticker%20by%20Grelldenker.gif' width="35">:
 
 <div align="left">
   <a href="https://instagram.com/samranjithpaul" target="_blank">
