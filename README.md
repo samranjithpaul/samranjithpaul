@@ -1,4 +1,5 @@
-#  Hello World! I'm Sam, Software Dev by Day, Debugger by Night <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Love%20Sticker%20by%20Ba'ndo.gif" width="40"> :
+#  Hello World! I'm Sam, Software Dev by Day, Debugger by Night 👋🏽 :
+
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
@@ -7,10 +8,11 @@
  
 
 <br><div align="center">
-  <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker.gif" width="300" height="300">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="300" height="300">
 </div>
 
-## <img src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Video%20Game%20Spinning%20Sticker%20by%20Ali%20Graham.gif" width="30"> A Little Bit About Me and My Interests    
+
+## 🌀 A Little Bit About Me and My Interests     
 
 
 ```yaml
@@ -58,7 +60,8 @@ fun_facts:
 <!--- -- Skills Section ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-# Skills <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker-2.gif' width="40"> 
+# Skills <img src='https://user-images.githubusercontent.com/74038190/206662607-d9e7591e-bbf9-42f9-9386-29efc927bc16.gif' width="40"> 
+
 
 
   <br>
@@ -137,7 +140,7 @@ fun_facts:
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-##  Socials <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Pixel%20Click%20Sticker%20by%20Grelldenker.gif' width="35">:
+## 🌐 Socials:
 
 <div align="left">
   <a href="https://instagram.com/samranjithpaul" target="_blank">
