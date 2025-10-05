@@ -8,7 +8,7 @@
  
 
 <br>
-   <img height="150" src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/data%20noise%20GIF%20by%20Nico%20Roxe.gif"  width="900"> 
+   <img height="150" src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/data%20noise%20GIF%20by%20Nico%20Roxe.gif"  width="1200"> 
 
 
 
