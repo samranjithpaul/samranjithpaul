@@ -3,7 +3,7 @@
 
   <!--<img align='center' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' alt="gitemoji" width='300"'>-->
  
-<img height="150" src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/one-piece-hat-luffy-hat.gif"  width="150"> 
+<img  align='center' src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/one-piece-hat-luffy-hat.gif"  > 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1920" />
 
 ##  A Little Bit About Me and My Interests ..    
