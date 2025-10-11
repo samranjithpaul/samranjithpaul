@@ -1,6 +1,6 @@
 
 <!-- Profile Header -->
-<h1 align="center">Hello World!, I'm Sam</h1>
+<h1 align="center">Hello World!, I'm Sam 👋🏽</h1>
 <h2 align="center">Software Dev by Day | Debugger by Night</h3>
 
 ---
