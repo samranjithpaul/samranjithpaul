@@ -8,7 +8,7 @@
  
 
 
-##  A Little Bit About Me and My Interests ..    
+###  A Little Bit About Me and My Interests ..    
 
 
 ```yaml
@@ -50,7 +50,7 @@ fun_facts:
   ]
 ```
 ---
-# Skills <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker-2.gif' width="40"> 
+## Skills <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker-2.gif' width="40"> 
 
   <br>
 <div align="center">
@@ -127,7 +127,7 @@ fun_facts:
 ---
 
 
-# Socials:
+## Socials:
 
 <div align="left">
   <a href="https://instagram.com/samranjithpaul" target="_blank">
