@@ -1,7 +1,9 @@
 
 <!-- Profile Header -->
 <h1 align="center">Hello World!, I'm Sam</h1>
-<h3 align="center">Software Dev by Day | Debugger by Night</h3>
+<h1 align="center">Software Dev by Day | Debugger by Night</h3>
+
+---
   <!--<img align='center' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' alt="gitemoji" width='300"'>-->
  
 <img height="150" src="https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/data%20noise%20GIF%20by%20Nico%20Roxe.gif"  width="1200"> 
