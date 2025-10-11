@@ -50,7 +50,7 @@ fun_facts:
   ]
 ```
 ---
-## Skills <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker-2.gif' width="40"> 
+# Skills <img src='https://github.com/samranjithpaul/samranjithpaul/blob/main/Images/Art%20Pixel%20Sticker-2.gif' width="40"> 
 
   <br>
 <div align="center">
