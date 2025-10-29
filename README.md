@@ -5,7 +5,7 @@
 
 <h6 align="center">
   <a href="https://samranjithpaul-s.web.app/" target="_blank">
-    My code, my craft — take a look.
+    Click me — To take a look.
   </a>
 </h6>
 
