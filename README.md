@@ -3,12 +3,17 @@
 <h1 align="center">Hello World!, I'm Sam 👋🏽</h1>
 <h2 align="center">Software Dev by Day | Debugger by Night</h3>
 
-<h6 align="center">Here's my <a href="https://samranjithpaul-s.web.app/" target="_blank">portfolio</a>, check it out.</h6>
+<h6 align="center">
+  <a href="https://samranjithpaul-s.web.app/" target="_blank">
+    My code, my craft — take a look.
+  </a>
+</h6>
+
 
 ---
   <!--<img align='center' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' alt="gitemoji" width='300"'>-->
  
-Here's my [portfolio](https://samranjithpaul-s.web.app/), Checkout
+
 
 ###  A Little Bit About Me and My Interests ..    
 
