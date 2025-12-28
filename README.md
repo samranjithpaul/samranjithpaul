@@ -4,7 +4,7 @@
 <h2 align="center">Software Dev by Day | Debugger by Night</h3>
 
 <h6 align="center">
-  <a href="https://sam-terminal.vercel.app/projects" target="_blank">
+  <a href="https://sam-terminal.vercel.app" target="_blank">
     My code, my craft — take a look.
   </a>
 </h6>
