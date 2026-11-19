@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Design a personalized diamond mosaic kit from a photo with Tessera Studio.">
+<title>Tessera Studio | Photo Mosaic Kits</title>
+<style>
+:root{--paper:#f7f1e7;--ink:#251c2e;--muted:#625767;--accent:#583859;--line:#d8cbd4;--plum:#2e2039}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}h1,h2,h3,p,figure{margin:0}h1,h2,h3,.brand{font-family:Georgia,serif;font-weight:400;line-height:1.05}h1{font-size:clamp(3.65rem,8vw,8rem);letter-spacing:-.07em}h2{font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:-.055em}h3{font-size:1.6rem}a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #a45a80;outline-offset:4px}
+.wrap{width:min(1200px,calc(100% - 48px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:16px}.brand{font-size:1.65rem;text-decoration:none;white-space:nowrap}.mark{color:#a25879}.nav nav{display:flex;gap:30px}.nav nav a,.plain{text-decoration:none;font-size:.91rem}.nav nav a:hover,.plain:hover{text-decoration:underline}.pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:100px;padding:12px 22px;background:var(--accent);color:white;text-decoration:none;font-weight:650}.pill:hover{background:#744674}.outline{background:none;color:inherit;border-color:var(--line)}.outline:hover{background:#e9dbe3}.hero{background:var(--plum);color:#fff7ec;overflow:hidden}.hero .wrap{min-height:600px;display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:35px;padding-block:60px}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.72rem;font-weight:750;color:#e3adc5;margin-bottom:18px}.hero em{color:#ebbad1;font-weight:400}.hero p:not(.eyebrow){max-width:380px;color:#e9dce7;margin:24px 0 30px}.hero .pill{background:#efc4d6;color:var(--ink)}.hero .pill:hover{background:#fff1f7}.frame{position:relative;padding:15px;background:#e9c9b4;box-shadow:13px 18px 0 #201627,0 25px 65px #170f21a0;transform:rotate(4deg);max-width:490px;margin:16px 22px}.frame figcaption{position:absolute;bottom:25px;left:25px;padding:5px 12px;background:var(--paper);color:var(--ink);border-radius:100px;font-size:.76rem}canvas{display:block;width:100%;height:auto;background:#ba819b}.section{padding-block:75px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:30px}.section-head p,.muted{color:var(--muted)}.catalog,.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fcf7f1}.art{aspect-ratio:1.5;display:grid;place-items:center;background:#e8c8d9;padding:20px}.card:nth-child(2) .art{background:#ded5e9}.card:nth-child(3) .art{background:#ebd7be}.art canvas{width:min(66%,210px);border:7px solid #fff7ec;box-shadow:6px 8px 0 #3f284430;transform:rotate(-5deg)}.card:nth-child(2) canvas{transform:rotate(4deg)}.card-body{padding:20px}.card-body p{margin:9px 0 18px}.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.card-foot .pill{padding:7px 13px}.studio{background:#eadce8}.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(25px,6vw,85px);align-items:center}.studio p{margin:14px 0}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.fields label,.upload{display:grid;gap:6px;font-weight:650}.fields select{width:100%;padding:9px;border:1px solid #bba6bc;border-radius:8px;background:#fffaf5;color:inherit}.upload{border:1px dashed #9e799e;padding:12px;border-radius:10px}.upload input{max-width:100%;font-size:.9rem}.studio canvas{border:12px solid #fff8ed;box-shadow:9px 10px 0 #c9b3c8}.preview figcaption{padding-top:16px;color:var(--muted);font-size:.88rem}.steps li{padding:20px 0;border-top:1px solid var(--line)}.steps{list-style:none;padding:0;margin:30px 0 0}.steps p{margin-top:9px}details{padding-block:14px;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:650}details p{margin-top:8px}footer{border-top:1px solid var(--line);padding-block:24px}.foot{display:flex;justify-content:space-between;gap:12px}dialog{width:min(510px,calc(100% - 30px));max-height:85vh;border:0;border-radius:18px;padding:25px;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#21152ac0}.bag-head,.bag-total,.bag-row{display:flex;justify-content:space-between;align-items:center;gap:14px}.bag-row{border-bottom:1px solid var(--line);padding:14px 0}.bag-row button{min-width:34px;min-height:34px}.bag-total{margin:18px 0 10px}.close{background:none;border:1px solid var(--line);border-radius:100px;padding:5px 12px}small{display:block;color:var(--muted)}[role=status]{min-height:1.55em}
+@media(max-width:720px){.wrap{width:calc(100% - 32px)}.nav{flex-wrap:wrap;padding:12px 0}.nav nav{order:3;width:100%;gap:20px}.hero .wrap,.studio .wrap{grid-template-columns:1fr}.hero .wrap,.section{padding-block:44px}.frame{max-width:400px}.catalog,.steps{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.foot{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+<a class="brand" href="#"><span class="mark" aria-hidden="true">✦</span> Tessera Studio</a>
+<nav aria-label="Main navigation"><a href="#kits">Kits</a><a href="#studio">Photo studio</a><a href="#guide">How it works</a></nav>
+<button class="pill outline" id="open-bag" type="button">Bag (<span id="count">0</span>)</button>
+</header>
+<main>
+<section class="hero"><div class="wrap">
+<div><p class="eyebrow">Personalized diamond painting</p><h1>A photo worth <em>making.</em></h1>
+<p>Turn a favorite photograph into a diamond mosaic you can assemble by hand, piece by piece.</p>
+<a class="pill" href="#studio">Try your photo <span aria-hidden="true">↗</span></a></div>
+<figure class="frame"><canvas width="560" height="400" data-art="0" role="img" aria-label="Pink sunset over purple mountains rendered as a diamond mosaic"></canvas><figcaption>Sunset mosaic sample</figcaption></figure>
+</div></section>
+<section class="section wrap" id="kits"><div class="section-head"><h2>Find your kit</h2><p>Three sizes for different levels of detail.</p></div><div class="catalog" id="catalog"></div></section>
+<section class="section studio" id="studio"><div class="wrap">
+<div><h2>Make it yours</h2><p>Choose a photo, a kit size and a palette to see an approximate mosaic preview.</p>
+<form id="customizer">
+<label class="upload">Choose a photo<input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG, PNG or WebP up to 12 MB. Your photo stays on this device.</small></label>
+<div class="fields"><label>Kit size<select id="kit"></select></label><label>Palette<select id="palette"><option>Full color</option><option>Sepia</option><option>Monochrome</option></select></label></div>
+<button class="pill" id="add" type="submit">Add to bag</button>
+<button class="pill outline" type="button" id="reset" hidden>Use sample</button>
+<p id="status" role="status" aria-live="polite"></p>
+</form></div>
+<figure class="preview"><canvas id="preview" width="560" height="400" role="img" aria-label="Diamond mosaic preview"></canvas><figcaption id="preview-caption">Sample artwork · Full color</figcaption></figure>
+</div></section>
+<section class="section wrap" id="guide"><h2>From camera to canvas</h2>
+<ol class="steps"><li><h3>Choose a memory</h3><p class="muted">A clear, well-lit photo with one main subject works best.</p></li><li><h3>Make it a mosaic</h3><p class="muted">Preview the palette and choose a canvas size that suits your photo.</p></li><li><h3>Place each diamond</h3><p class="muted">Match the gems to the printed guide, then display or gift your finished piece.</p></li></ol>
+</section>
+<section class="section wrap"><h2>Common questions</h2>
+<details><summary>What would a kit include?</summary><p>A printed guide canvas, color-coded diamond pieces, an applicator, a tray and wax.</p></details>
+<details><summary>Can I order or pay here?</summary><p>This storefront is a demo. You can preview photos and manage a bag. Prices are illustrative.</p></details>
+</section></main>
+<footer><div class="wrap foot"><span class="brand">Tessera Studio</span><small>Personalized mosaic storefront demo</small></div></footer>
+<dialog id="bag" aria-labelledby="bag-title"><div class="bag-head"><h2 id="bag-title">Your bag</h2><button type="button" class="close" id="close-bag">Close</button></div><div id="items"></div><div class="bag-total"><strong>Estimated total</strong><strong id="total"></strong></div><small>Demo bag. Payments and orders are unavailable.</small></dialog>
+<script>
+const kits = [
+  {name:'Little Frame', size:'A5 · 15 × 21 cm', price:990, grid:40},
+  {name:'Everyday Canvas', size:'A4 · 21 × 30 cm', price:1490, grid:56},
+  {name:'Gallery Canvas', size:'A3 · 30 × 42 cm', price:2190, grid:72}
+];
+const byId = id => document.getElementById(id);
+const money = amount => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(amount);
+const kit = byId('kit'), palette = byId('palette'), photo = byId('photo'), bag = byId('bag');
+let source, imageRequest = 0;
+const storageKey = 'tessera-demo-bag';
+let items = {};
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+  for (const key of Object.keys(saved || {})) {
+    const [index, color, kind, extra] = key.split('|');
+    if (kits[index] && Array.from(palette.options).some(option => option.value === color) &&
+        ['photo','sample'].includes(kind) && extra === undefined && Number.isInteger(saved[key]) &&
+        saved[key] > 0 && saved[key] <= 99) items[key] = saved[key];
+  }
+} catch {}
+function sample(theme) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 250;
+  canvas.height = 178;
+  const ctx = canvas.getContext('2d');
+  const colors = [
+    ['#655083','#e69d9e','#ffd3a0','#87638a','#574266','#392f50','#242638'],
+    ['#3c6383','#a9cfca','#ffdda9','#61877f','#426c6b','#2d535a','#243946'],
+    ['#b7627a','#f3b881','#ffe2ac','#b17b77','#94605a','#70434f','#472c43']
+  ][theme];
+  const sky = ctx.createLinearGradient(0,0,0,128);
+  sky.addColorStop(0,colors[0]);
+  sky.addColorStop(1,colors[1]);
+  ctx.fillStyle = sky;
+  ctx.fillRect(0,0,250,178);
+  ctx.fillStyle = colors[2];
+  ctx.beginPath();
+  ctx.arc(156,64,32,0,Math.PI*2);
+  ctx.fill();
+  for (let layer=0; layer<4; layer++) {
+    ctx.fillStyle = colors[layer+3];
+    ctx.beginPath();
+    ctx.moveTo(0,178);
+    for(let x=0; x<=250; x+=5) {
+      const ridge = 91+layer*21+Math.sin(x/29+layer*1.5)*17+Math.cos(x/13-layer)*5;
+      ctx.lineTo(x,ridge);
+    }
+    ctx.lineTo(250,178);
+    ctx.fill();
+  }
+  return canvas;
+}
+function mosaic(canvas, image, columns, color='Full color') {
+  const ctx=canvas.getContext('2d'), rows=Math.round(columns*canvas.height/canvas.width);
+  const tile=document.createElement('canvas');
+  tile.width=columns;
+  tile.height=rows;
+  const buffer=tile.getContext('2d');
+  const width=image.naturalWidth || image.width, height=image.naturalHeight || image.height;
+  const scale=Math.max(columns/width,rows/height);
+  buffer.fillStyle='#fcf0e5';
+  buffer.fillRect(0,0,columns,rows);
+  buffer.drawImage(image,(columns-width*scale)/2,(rows-height*scale)/2,width*scale,height*scale);
+  const pixels=buffer.getImageData(0,0,columns,rows).data;
+  const w=canvas.width/columns, h=canvas.height/rows;
+  ctx.fillStyle='#382c3c';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  for(let y=0;y<rows;y++) for(let x=0;x<columns;x++) {
+    const i=(y*columns+x)*4;
+    let [r,g,b]=[pixels[i],pixels[i+1],pixels[i+2]];
+    const light=.299*r+.587*g+.114*b;
+    if(color==='Monochrome') r=g=b=light;
+    if(color==='Sepia') [r,g,b]=[light*1.13,light*.96,light*.75];
+    const shade = channel => Math.min(255,Math.round(channel/12)*12);
+    ctx.fillStyle='rgb('+[r,g,b].map(shade).join(',')+')';
+    ctx.fillRect(x*w+.35,y*h+.35,w-.7,h-.7);
+    ctx.fillStyle='rgba(255,255,255,.16)';
+    ctx.beginPath();
+    ctx.moveTo(x*w+.6,y*h+.6);
+    ctx.lineTo((x+1)*w-.6,y*h+.6);
+    ctx.lineTo(x*w+.6,(y+1)*h-.6);
+    ctx.fill();
+  }
+}
+const samples = [sample(0),sample(1),sample(2)];
+kits.forEach((product,index)=>{
+  kit.add(new Option(product.name+' · '+product.size,index));
+  const card=document.createElement('article');
+  card.className='card';
+  card.innerHTML='<div class="art"><canvas width="280" height="200" aria-hidden="true"></canvas></div><div class="card-body"><h3>'+product.name+'</h3><p class="muted">'+product.size+'</p><div class="card-foot"><strong>'+money(product.price)+'</strong><a class="pill outline" href="#studio">Customize</a></div></div>';
+  const link=card.querySelector('a');
+  link.setAttribute('aria-label','Customize '+product.name);
+  link.addEventListener('click',()=>{kit.value=index; refreshPreview()});
+  byId('catalog').append(card);
+  mosaic(card.querySelector('canvas'),samples[index],42);
+});
+mosaic(document.querySelector('[data-art]'),samples[0],68);
+kit.value=1;
+function refreshPreview() {
+  const selected=kits[kit.value];
+  mosaic(byId('preview'),source || samples[kit.value],selected.grid,palette.value);
+  byId('preview-caption').textContent=(source?'Your photo':'Sample artwork')+' · '+palette.value;
+  byId('add').textContent='Add to bag · '+money(selected.price);
+  byId('reset').hidden=!source;
+}
+photo.addEventListener('change',async()=>{
+  const current=++imageRequest;
+  const file=photo.files[0];
+  if(!file) return;
+  if(!['image/jpeg','image/png','image/webp'].includes(file.type) || file.size>12*1024*1024){
+    photo.value='';
+    byId('status').textContent='Choose a JPG, PNG or WebP image up to 12 MB.';
+    return;
+  }
+  const url=URL.createObjectURL(file);
+  const image=new Image();
+  image.src=url;
+  try{
+    await image.decode();
+    if(current!==imageRequest) return;
+    source=image;
+    refreshPreview();
+    byId('status').textContent='Photo preview ready.';
+  }catch{
+    if(current!==imageRequest) return;
+    photo.value='';
+    byId('status').textContent='This image could not be opened. Try another file.';
+  }finally{URL.revokeObjectURL(url)}
+});
+byId('reset').onclick=()=>{
+  imageRequest++;
+  source=undefined;
+  photo.value='';
+  byId('status').textContent='Sample artwork restored.';
+  refreshPreview();
+};
+kit.onchange=palette.onchange=refreshPreview;
+function renderBag(){
+  const list=byId('items');
+  list.replaceChildren();
+  let count=0, total=0;
+  for(const [key,quantity] of Object.entries(items)){
+    const [index,color,kind]=key.split('|');
+    const product=kits[index];
+    count+=quantity;
+    total+=quantity*product.price;
+    const row=document.createElement('div');
+    row.className='bag-row';
+    const desc=document.createElement('div');
+    const title=document.createElement('strong');
+    title.textContent=product.name;
+    const details=document.createElement('small');
+    details.textContent=color+' · '+(kind==='photo'?'Personalized':'Sample')+' · '+money(product.price);
+    desc.append(title,details);
+    const options=document.createElement('div');
+    const remove=document.createElement('button');
+    remove.className='close';
+    remove.textContent='−';
+    remove.setAttribute('aria-label','Remove one '+product.name);
+    remove.onclick=()=>{
+      if(quantity===1) delete items[key];
+      else items[key]--;
+      updateBag();
+      const buttons=list.querySelectorAll('button');
+      (buttons[Math.min(rowIndex,buttons.length-1)] || byId('close-bag')).focus();
+    };
+    const rowIndex=list.children.length;
+    options.append(document.createTextNode(quantity+' × '),remove);
+    row.append(desc,options);
+    list.append(row);
+  }
+  if(!count) list.textContent='Your bag is empty.';
+  byId('count').textContent=count;
+  byId('total').textContent=money(total);
+}
+function updateBag(){
+  try{localStorage.setItem(storageKey,JSON.stringify(items))}catch{}
+  renderBag();
+}
+byId('customizer').onsubmit=event=>{
+  event.preventDefault();
+  const key=[kit.value,palette.value,source?'photo':'sample'].join('|');
+  items[key]=Math.min((items[key] || 0)+1,99);
+  updateBag();
+  bag.showModal();
+};
+byId('open-bag').onclick=()=>bag.showModal();
+byId('close-bag').onclick=()=>bag.close();
+refreshPreview();
+renderBag();
+</script>
+</body>
+</html>
