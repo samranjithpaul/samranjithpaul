@@ -3,241 +3,462 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Design a personalized diamond mosaic kit from a photo with Tessera Studio.">
-<title>Tessera Studio | Photo Mosaic Kits</title>
+<meta name="description" content="Create free, printable diamond painting patterns from your photos. Works offline.">
+<title>Tessera Studio | Diamond Painting Pattern Maker</title>
 <style>
 :root{--paper:#f7f1e7;--ink:#251c2e;--muted:#625767;--accent:#583859;--line:#d8cbd4;--plum:#2e2039}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}h1,h2,h3,p,figure{margin:0}h1,h2,h3,.brand{font-family:Georgia,serif;font-weight:400;line-height:1.05}h1{font-size:clamp(3.65rem,8vw,8rem);letter-spacing:-.07em}h2{font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:-.055em}h3{font-size:1.6rem}a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #a45a80;outline-offset:4px}
-.wrap{width:min(1200px,calc(100% - 48px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:16px}.brand{font-size:1.65rem;text-decoration:none;white-space:nowrap}.mark{color:#a25879}.nav nav{display:flex;gap:30px}.nav nav a,.plain{text-decoration:none;font-size:.91rem}.nav nav a:hover,.plain:hover{text-decoration:underline}.pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:100px;padding:12px 22px;background:var(--accent);color:white;text-decoration:none;font-weight:650}.pill:hover{background:#744674}.outline{background:none;color:inherit;border-color:var(--line)}.outline:hover{background:#e9dbe3}.hero{background:var(--plum);color:#fff7ec;overflow:hidden}.hero .wrap{min-height:600px;display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:35px;padding-block:60px}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.72rem;font-weight:750;color:#e3adc5;margin-bottom:18px}.hero em{color:#ebbad1;font-weight:400}.hero p:not(.eyebrow){max-width:380px;color:#e9dce7;margin:24px 0 30px}.hero .pill{background:#efc4d6;color:var(--ink)}.hero .pill:hover{background:#fff1f7}.frame{position:relative;padding:15px;background:#e9c9b4;box-shadow:13px 18px 0 #201627,0 25px 65px #170f21a0;transform:rotate(4deg);max-width:490px;margin:16px 22px}.frame figcaption{position:absolute;bottom:25px;left:25px;padding:5px 12px;background:var(--paper);color:var(--ink);border-radius:100px;font-size:.76rem}canvas{display:block;width:100%;height:auto;background:#ba819b}.section{padding-block:75px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:30px}.section-head p,.muted{color:var(--muted)}.catalog,.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fcf7f1}.art{aspect-ratio:1.5;display:grid;place-items:center;background:#e8c8d9;padding:20px}.card:nth-child(2) .art{background:#ded5e9}.card:nth-child(3) .art{background:#ebd7be}.art canvas{width:min(66%,210px);border:7px solid #fff7ec;box-shadow:6px 8px 0 #3f284430;transform:rotate(-5deg)}.card:nth-child(2) canvas{transform:rotate(4deg)}.card-body{padding:20px}.card-body p{margin:9px 0 18px}.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.card-foot .pill{padding:7px 13px}.studio{background:#eadce8}.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(25px,6vw,85px);align-items:center}.studio p{margin:14px 0}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.fields label,.upload{display:grid;gap:6px;font-weight:650}.fields select{width:100%;padding:9px;border:1px solid #bba6bc;border-radius:8px;background:#fffaf5;color:inherit}.upload{border:1px dashed #9e799e;padding:12px;border-radius:10px}.upload input{max-width:100%;font-size:.9rem}.studio canvas{border:12px solid #fff8ed;box-shadow:9px 10px 0 #c9b3c8}.preview figcaption{padding-top:16px;color:var(--muted);font-size:.88rem}.steps li{padding:20px 0;border-top:1px solid var(--line)}.steps{list-style:none;padding:0;margin:30px 0 0}.steps p{margin-top:9px}details{padding-block:14px;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:650}details p{margin-top:8px}footer{border-top:1px solid var(--line);padding-block:24px}.foot{display:flex;justify-content:space-between;gap:12px}dialog{width:min(510px,calc(100% - 30px));max-height:85vh;border:0;border-radius:18px;padding:25px;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#21152ac0}.bag-head,.bag-total,.bag-row{display:flex;justify-content:space-between;align-items:center;gap:14px}.bag-row{border-bottom:1px solid var(--line);padding:14px 0}.bag-row button{min-width:34px;min-height:34px}.bag-total{margin:18px 0 10px}.close{background:none;border:1px solid var(--line);border-radius:100px;padding:5px 12px}small{display:block;color:var(--muted)}[role=status]{min-height:1.55em}
-@media(max-width:720px){.wrap{width:calc(100% - 32px)}.nav{flex-wrap:wrap;padding:12px 0}.nav nav{order:3;width:100%;gap:20px}.hero .wrap,.studio .wrap{grid-template-columns:1fr}.hero .wrap,.section{padding-block:44px}.frame{max-width:400px}.catalog,.steps{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.foot{flex-wrap:wrap}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}h1,h2,p,figure{margin:0}h1,h2,.brand{font:400 2rem/1.04 Georgia,serif}h1{font-size:clamp(2.6rem,7vw,5rem);letter-spacing:-.055em}a{color:inherit}.wrap{width:min(1220px,calc(100% - 36px));margin:auto}header{padding-block:16px}.brand{text-decoration:none}.intro{background:var(--plum);color:#fff7ec;padding:38px 0}.intro p{color:#efc4d6;margin-top:13px}.workspace{display:grid;grid-template-columns:minmax(275px,325px) minmax(0,1fr);align-items:start;gap:22px;padding-block:26px}.panel{background:#fffaf3;border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}.controls{display:grid;gap:13px}.fields,.actions,.tile-nav{display:flex;flex-wrap:wrap;gap:10px}.fields label{flex:1;min-width:105px}label{display:grid;gap:4px;font-weight:650}input,select,button{font:inherit}input,select{max-width:100%;min-width:0;padding:7px;border:1px solid #bfa9bc;border-radius:8px;background:white;color:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);padding:7px 12px;font-weight:650}button:hover:not(:disabled){background:#f1e6ef}button.primary{background:var(--accent);color:white}button.primary:hover{background:#744674}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #a45a80;outline-offset:2px}.muted,small{color:var(--muted)}small{font-size:.82rem}.preview-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px}.preview-head h2{font-size:1.7rem}.surface{background:#e8dce7;border-radius:10px;overflow:auto;max-height:70vh;padding:12px}.surface canvas{display:block;max-width:100%;max-height:65vh;width:auto;height:auto;margin:auto;object-fit:contain}.surface.chart canvas{max-height:none;max-width:none}.tile-nav{margin:12px 0;align-items:center}.tile-nav[hidden]{display:none}.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:7px;margin-top:14px}.legend div{display:flex;align-items:center;gap:6px;font-size:.83rem}.swatch{width:22px;height:22px;border:1px solid #756b75;border-radius:4px;flex:none}.hint{margin-top:15px}.help{padding:0 0 30px}.help ol{padding-left:24px}.help li{margin-top:8px}footer{padding-block:18px;border-top:1px solid var(--line)}
+@media(max-width:760px){.workspace{grid-template-columns:1fr}.intro{padding:26px 0}}
 </style>
 </head>
 <body>
-<header class="wrap nav">
-<a class="brand" href="#"><span class="mark" aria-hidden="true">✦</span> Tessera Studio</a>
-<nav aria-label="Main navigation"><a href="#kits">Kits</a><a href="#studio">Photo studio</a><a href="#guide">How it works</a></nav>
-<button class="pill outline" id="open-bag" type="button">Bag (<span id="count">0</span>)</button>
-</header>
+<header class="wrap"><a href="#" class="brand">✦ Tessera Studio</a></header>
 <main>
-<section class="hero"><div class="wrap">
-<div><p class="eyebrow">Personalized diamond painting</p><h1>A photo worth <em>making.</em></h1>
-<p>Turn a favorite photograph into a diamond mosaic you can assemble by hand, piece by piece.</p>
-<a class="pill" href="#studio">Try your photo <span aria-hidden="true">↗</span></a></div>
-<figure class="frame"><canvas width="560" height="400" data-art="0" role="img" aria-label="Pink sunset over purple mountains rendered as a diamond mosaic"></canvas><figcaption>Sunset mosaic sample</figcaption></figure>
-</div></section>
-<section class="section wrap" id="kits"><div class="section-head"><h2>Find your kit</h2><p>Three sizes for different levels of detail.</p></div><div class="catalog" id="catalog"></div></section>
-<section class="section studio" id="studio"><div class="wrap">
-<div><h2>Make it yours</h2><p>Choose a photo, a kit size and a palette to see an approximate mosaic preview.</p>
-<form id="customizer">
-<label class="upload">Choose a photo<input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG, PNG or WebP up to 12 MB. Your photo stays on this device.</small></label>
-<div class="fields"><label>Kit size<select id="kit"></select></label><label>Palette<select id="palette"><option>Full color</option><option>Sepia</option><option>Monochrome</option></select></label></div>
-<button class="pill" id="add" type="submit">Add to bag</button>
-<button class="pill outline" type="button" id="reset" hidden>Use sample</button>
-<p id="status" role="status" aria-live="polite"></p>
-</form></div>
-<figure class="preview"><canvas id="preview" width="560" height="400" role="img" aria-label="Diamond mosaic preview"></canvas><figcaption id="preview-caption">Sample artwork · Full color</figcaption></figure>
-</div></section>
-<section class="section wrap" id="guide"><h2>From camera to canvas</h2>
-<ol class="steps"><li><h3>Choose a memory</h3><p class="muted">A clear, well-lit photo with one main subject works best.</p></li><li><h3>Make it a mosaic</h3><p class="muted">Preview the palette and choose a canvas size that suits your photo.</p></li><li><h3>Place each diamond</h3><p class="muted">Match the gems to the printed guide, then display or gift your finished piece.</p></li></ol>
+<section class="intro"><div class="wrap"><h1>Diamond painting pattern maker</h1><p>Turn a photo into a numbered canvas guide. Free, offline and private.</p></div></section>
+<div class="wrap workspace">
+<form class="panel controls" id="settings">
+<h2>Canvas setup</h2>
+<label>Choose a photo<input type="file" id="photo" accept="image/jpeg,image/png,image/webp"></label>
+<small>JPG, PNG or WebP up to 20 MB. The image stays in your browser.</small>
+<button id="sample" type="button">Use sample artwork</button>
+<div class="fields"><label>Width (cm)<input id="width" type="number" min="2" max="100" value="30" step=".1" required></label>
+<label>Height (cm)<input id="height" type="number" min="2" max="100" value="40" step=".1" required></label></div>
+<label>Cell spacing (mm)<input id="pitch" type="number" min="2" max="8" value="2.5" step=".01" required></label>
+<small>Measure center-to-center on your blank grid, or measure 10 cells and divide by 10.</small>
+<div class="fields"><label>Max colors<input id="colors" type="number" min="2" max="48" value="24" required></label>
+<label>Photo fit<select id="fit"><option value="cover">Fill canvas</option><option value="contain">Show entire photo</option></select></label></div>
+<label>Palette<select id="tone"><option value="color">Full color</option><option value="sepia">Sepia</option><option value="gray">Monochrome</option></select></label>
+<button type="submit" class="primary">Generate pattern</button>
+<small id="status" role="status" aria-live="polite"></small>
+</form>
+<section class="panel" aria-labelledby="pattern-title">
+<div class="preview-head"><h2 id="pattern-title">Your pattern</h2><label>View<select id="mode"><option value="preview">Finished mosaic</option><option value="numbers">Numbered placement</option></select></label></div>
+<p id="summary" class="muted"></p>
+<div class="tile-nav" id="tile-nav" hidden>
+<button type="button" id="prev" aria-label="Previous section">←</button>
+<label>Section<select id="tile"></select></label>
+<button type="button" id="next" aria-label="Next section">→</button>
+<span id="coordinates"></span></div>
+<figure class="surface" id="surface"><canvas id="canvas" role="img" aria-label="Finished mosaic preview"></canvas></figure>
+<p id="chart-hint" class="muted hint" hidden>Scroll the chart to see every cell. Match each number to the legend.</p>
+<div class="actions hint"><button type="button" class="primary" id="pdf">Download placement PDF</button><button type="button" id="png">Download preview PNG</button><button type="button" id="csv">Download bead list CSV</button></div>
+<div class="hint"><strong>Bead legend</strong><p class="muted">Colors are estimated from your photo. Match the swatches to your beads before starting.</p><div class="legend" id="legend"></div></div>
 </section>
-<section class="section wrap"><h2>Common questions</h2>
-<details><summary>What would a kit include?</summary><p>A printed guide canvas, color-coded diamond pieces, an applicator, a tray and wax.</p></details>
-<details><summary>Can I order or pay here?</summary><p>This storefront is a demo. You can preview photos and manage a bag. Prices are illustrative.</p></details>
-</section></main>
-<footer><div class="wrap foot"><span class="brand">Tessera Studio</span><small>Personalized mosaic storefront demo</small></div></footer>
-<dialog id="bag" aria-labelledby="bag-title"><div class="bag-head"><h2 id="bag-title">Your bag</h2><button type="button" class="close" id="close-bag">Close</button></div><div id="items"></div><div class="bag-total"><strong>Estimated total</strong><strong id="total"></strong></div><small>Demo bag. Payments and orders are unavailable.</small></dialog>
+</div>
+<section class="wrap help"><h2>Place the beads on your canvas</h2>
+<ol><li>Measure the usable grid and enter its dimensions and cell spacing. The pattern rounds down to whole cells.</li>
+<li>Open the numbered placement view or download the PDF. The first PDF page shows the section map and bead counts. The placement pages show row and column numbers measured from the top-left corner.</li>
+<li>On A4, print at <strong>Actual size / 100%</strong> and measure the 50 mm ruler on a placement page. Align the first cell to the top-left of your canvas. Place each bead by its legend number.</li></ol></section>
+</main>
+<footer class="wrap muted">Tessera Studio · No account or API required.</footer>
 <script>
-const kits = [
-  {name:'Little Frame', size:'A5 · 15 × 21 cm', price:990, grid:40},
-  {name:'Everyday Canvas', size:'A4 · 21 × 30 cm', price:1490, grid:56},
-  {name:'Gallery Canvas', size:'A3 · 30 × 42 cm', price:2190, grid:72}
-];
 const byId = id => document.getElementById(id);
-const money = amount => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(amount);
-const kit = byId('kit'), palette = byId('palette'), photo = byId('photo'), bag = byId('bag');
-let source, imageRequest = 0;
-const storageKey = 'tessera-demo-bag';
-let items = {};
-try {
-  const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
-  for (const key of Object.keys(saved || {})) {
-    const [index, color, kind, extra] = key.split('|');
-    if (kits[index] && Array.from(palette.options).some(option => option.value === color) &&
-        ['photo','sample'].includes(kind) && extra === undefined && Number.isInteger(saved[key]) &&
-        saved[key] > 0 && saved[key] <= 99) items[key] = saved[key];
-  }
-} catch {}
-function sample(theme) {
-  const canvas = document.createElement('canvas');
-  canvas.width = 250;
-  canvas.height = 178;
-  const ctx = canvas.getContext('2d');
-  const colors = [
-    ['#655083','#e69d9e','#ffd3a0','#87638a','#574266','#392f50','#242638'],
-    ['#3c6383','#a9cfca','#ffdda9','#61877f','#426c6b','#2d535a','#243946'],
-    ['#b7627a','#f3b881','#ffe2ac','#b17b77','#94605a','#70434f','#472c43']
-  ][theme];
-  const sky = ctx.createLinearGradient(0,0,0,128);
-  sky.addColorStop(0,colors[0]);
-  sky.addColorStop(1,colors[1]);
+const canvas = byId('canvas');
+const settings = byId('settings');
+const status = message => { byId('status').textContent = message; };
+const downloads = ['pdf', 'png', 'csv'];
+let source, pattern, reading = false, imageRequest = 0;
+
+function makeSample() {
+  const image = document.createElement('canvas');
+  image.width = 420;
+  image.height = 560;
+  const ctx = image.getContext('2d');
+  const sky = ctx.createLinearGradient(0, 0, 0, 420);
+  sky.addColorStop(0, '#634f89');
+  sky.addColorStop(1, '#f5a78e');
   ctx.fillStyle = sky;
-  ctx.fillRect(0,0,250,178);
-  ctx.fillStyle = colors[2];
+  ctx.fillRect(0, 0, 420, 560);
+  ctx.fillStyle = '#ffdb9d';
   ctx.beginPath();
-  ctx.arc(156,64,32,0,Math.PI*2);
+  ctx.arc(267, 190, 64, 0, Math.PI * 2);
   ctx.fill();
-  for (let layer=0; layer<4; layer++) {
-    ctx.fillStyle = colors[layer+3];
+  ['#a87492', '#805875', '#604163', '#372c49'].forEach((color, layer) => {
+    ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.moveTo(0,178);
-    for(let x=0; x<=250; x+=5) {
-      const ridge = 91+layer*21+Math.sin(x/29+layer*1.5)*17+Math.cos(x/13-layer)*5;
-      ctx.lineTo(x,ridge);
+    ctx.moveTo(0, 560);
+    for (let x = 0; x <= 420; x += 6) {
+      ctx.lineTo(x, 295 + layer * 54 + Math.sin(x / 51 + layer * 1.6) * 40 + Math.cos(x / 25 - layer) * 18);
     }
-    ctx.lineTo(250,178);
+    ctx.lineTo(420, 560);
     ctx.fill();
+  });
+  return image;
+}
+
+function colorDistance(a, b) {
+  return 2 * (a[0] - b[0]) ** 2 + 4 * (a[1] - b[1]) ** 2 + 3 * (a[2] - b[2]) ** 2;
+}
+
+function quantize(pixels, limit, tone) {
+  const histogram = new Map();
+  const keys = new Uint16Array(pixels.length / 4);
+  for (let i = 0; i < keys.length; i++) {
+    let [r, g, b] = pixels.subarray(i * 4, i * 4 + 3);
+    const light = .299 * r + .587 * g + .114 * b;
+    if (tone === 'gray') r = g = b = light;
+    if (tone === 'sepia') [r, g, b] = [Math.min(255, light * 1.11), light * .94, light * .74];
+    const key = ((r >> 3) << 10) | ((g >> 3) << 5) | (b >> 3);
+    keys[i] = key;
+    if (!histogram.has(key)) histogram.set(key, { key, rgb: [0, 0, 0], count: 0 });
+    const entry = histogram.get(key);
+    entry.rgb[0] += r;
+    entry.rgb[1] += g;
+    entry.rgb[2] += b;
+    entry.count++;
   }
-  return canvas;
+  const colors = [...histogram.values()].map(entry => ({
+    ...entry, rgb: entry.rgb.map(channel => channel / entry.count)
+  }));
+  function describe(entries) {
+    const min = [255, 255, 255], max = [0, 0, 0];
+    let total = 0;
+    for (const {rgb, count} of entries) {
+      total += count;
+      for (let i = 0; i < 3; i++) {
+        min[i] = Math.min(min[i], rgb[i]);
+        max[i] = Math.max(max[i], rgb[i]);
+      }
+    }
+    const ranges = max.map((value, index) => value - min[index]);
+    const axis = ranges.indexOf(Math.max(...ranges));
+    return {entries, total, axis, score: entries.length > 1 ? ranges[axis] * Math.sqrt(total) : -1};
+  }
+  const buckets = [describe(colors)];
+  while (buckets.length < limit) {
+    buckets.sort((a, b) => b.score - a.score);
+    if (buckets[0].score < 0) break;
+    const {entries, total, axis} = buckets.shift();
+    entries.sort((a, b) => a.rgb[axis] - b.rgb[axis]);
+    let middle = 0, cumulative = 0;
+    while (middle < entries.length - 1 && cumulative < total / 2) cumulative += entries[middle++].count;
+    buckets.push(describe(entries.slice(0, middle)), describe(entries.slice(middle)));
+  }
+  const candidates = buckets.map(({entries, total}) =>
+    [0, 1, 2].map(channel => Math.round(entries.reduce((sum, entry) => sum + entry.rgb[channel] * entry.count, 0) / total))
+  );
+  const lookup = new Uint8Array(32768);
+  const counts = new Uint32Array(candidates.length);
+  for (const {key, rgb, count} of colors) {
+    let closest = 0, minimum = Infinity;
+    candidates.forEach((candidate, index) => {
+      const distance = colorDistance(rgb, candidate);
+      if (distance < minimum) {
+        closest = index;
+        minimum = distance;
+      }
+    });
+    lookup[key] = closest;
+    counts[closest] += count;
+  }
+  const indexes = [...counts.keys()].filter(index => counts[index]).sort((a, b) => counts[b] - counts[a]);
+  const ids = new Map(indexes.map((index, order) => [index, order]));
+  return {
+    grid: Uint8Array.from(keys, key => ids.get(lookup[key])),
+    palette: indexes.map(index => ({rgb: candidates[index], count: counts[index]}))
+  };
 }
-function mosaic(canvas, image, columns, color='Full color') {
-  const ctx=canvas.getContext('2d'), rows=Math.round(columns*canvas.height/canvas.width);
-  const tile=document.createElement('canvas');
-  tile.width=columns;
-  tile.height=rows;
-  const buffer=tile.getContext('2d');
-  const width=image.naturalWidth || image.width, height=image.naturalHeight || image.height;
-  const scale=Math.max(columns/width,rows/height);
-  buffer.fillStyle='#fcf0e5';
-  buffer.fillRect(0,0,columns,rows);
-  buffer.drawImage(image,(columns-width*scale)/2,(rows-height*scale)/2,width*scale,height*scale);
-  const pixels=buffer.getImageData(0,0,columns,rows).data;
-  const w=canvas.width/columns, h=canvas.height/rows;
-  ctx.fillStyle='#382c3c';
-  ctx.fillRect(0,0,canvas.width,canvas.height);
-  for(let y=0;y<rows;y++) for(let x=0;x<columns;x++) {
-    const i=(y*columns+x)*4;
-    let [r,g,b]=[pixels[i],pixels[i+1],pixels[i+2]];
-    const light=.299*r+.587*g+.114*b;
-    if(color==='Monochrome') r=g=b=light;
-    if(color==='Sepia') [r,g,b]=[light*1.13,light*.96,light*.75];
-    const shade = channel => Math.min(255,Math.round(channel/12)*12);
-    ctx.fillStyle='rgb('+[r,g,b].map(shade).join(',')+')';
-    ctx.fillRect(x*w+.35,y*h+.35,w-.7,h-.7);
-    ctx.fillStyle='rgba(255,255,255,.16)';
-    ctx.beginPath();
-    ctx.moveTo(x*w+.6,y*h+.6);
-    ctx.lineTo((x+1)*w-.6,y*h+.6);
-    ctx.lineTo(x*w+.6,(y+1)*h-.6);
-    ctx.fill();
+
+function sectionMap(cols, rows, pitch) {
+  const stepX = Math.floor(169 / pitch);
+  const stepY = Math.floor(225 / pitch);
+  const sections = [];
+  for (let y = 0; y < rows; y += stepY) {
+    for (let x = 0; x < cols; x += stepX) {
+      sections.push({x, y, w: Math.min(stepX, cols - x), h: Math.min(stepY, rows - y)});
+    }
+  }
+  return sections;
+}
+
+const rgb = color => 'rgb(' + color.join(',') + ')';
+const hex = color => '#' + color.map(channel => channel.toString(16).padStart(2, '0')).join('').toUpperCase();
+const sizeIn = (cm, pitch) => Math.floor((cm * 10 + 1e-7) / pitch);
+const format = number => number.toLocaleString('en-IN', {maximumFractionDigits: 2});
+const range = section => 'Rows ' + (section.y + 1) + '–' + (section.y + section.h) +
+  ' · Columns ' + (section.x + 1) + '–' + (section.x + section.w);
+
+function invalidate() {
+  downloads.forEach(id => { byId(id).disabled = true; });
+  status('Settings changed. Generate a new pattern to update the downloads.');
+}
+
+function generate() {
+  if (reading || !settings.reportValidity()) return;
+  const pitch = byId('pitch').valueAsNumber;
+  const cols = sizeIn(byId('width').valueAsNumber, pitch);
+  const rows = sizeIn(byId('height').valueAsNumber, pitch);
+  const buffer = document.createElement('canvas');
+  buffer.width = cols;
+  buffer.height = rows;
+  const ctx = buffer.getContext('2d', {willReadFrequently: true});
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, cols, rows);
+  const width = source.naturalWidth || source.width;
+  const height = source.naturalHeight || source.height;
+  const fit = byId('fit').value === 'contain' ? Math.min : Math.max;
+  const scale = fit(cols / width, rows / height);
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(source, (cols - width * scale) / 2, (rows - height * scale) / 2, width * scale, height * scale);
+  pattern = {
+    ...quantize(ctx.getImageData(0, 0, cols, rows).data, byId('colors').valueAsNumber, byId('tone').value),
+    cols, rows, pitch, sections: sectionMap(cols, rows, pitch)
+  };
+  byId('tile').replaceChildren(...pattern.sections.map((_, index) => new Option('Section ' + (index + 1), index)));
+  byId('summary').textContent = cols + ' columns × ' + rows + ' rows · ' +
+    format(cols * pitch / 10) + ' × ' + format(rows * pitch / 10) + ' cm · ' +
+    format(cols * rows) + ' beads · ' + pattern.palette.length + ' colors';
+  const entries = pattern.palette.map(({rgb: color, count}, index) => {
+    const div = document.createElement('div');
+    const swatch = document.createElement('span');
+    swatch.className = 'swatch';
+    swatch.style.background = rgb(color);
+    div.append(swatch, document.createTextNode((index + 1) + ' · ' + hex(color) + ' · ' + format(count)));
+    return div;
+  });
+  byId('legend').replaceChildren(...entries);
+  render();
+  downloads.forEach(id => { byId(id).disabled = false; });
+  status('Pattern ready.');
+}
+
+function drawPreview(target) {
+  const {cols, rows, palette, grid} = pattern;
+  const scale = Math.max(3, Math.floor(1100 / Math.max(cols, rows)));
+  target.width = cols * scale;
+  target.height = rows * scale;
+  const ctx = target.getContext('2d');
+  const colors = palette.map(color => rgb(color.rgb));
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < cols; x++) {
+      ctx.fillStyle = colors[grid[y * cols + x]];
+      ctx.fillRect(x * scale, y * scale, scale, scale);
+      if (scale >= 6) {
+        ctx.fillStyle = 'rgba(255,255,255,.14)';
+        ctx.fillRect(x * scale, y * scale, scale, 1);
+      }
+    }
   }
 }
-const samples = [sample(0),sample(1),sample(2)];
-kits.forEach((product,index)=>{
-  kit.add(new Option(product.name+' · '+product.size,index));
-  const card=document.createElement('article');
-  card.className='card';
-  card.innerHTML='<div class="art"><canvas width="280" height="200" aria-hidden="true"></canvas></div><div class="card-body"><h3>'+product.name+'</h3><p class="muted">'+product.size+'</p><div class="card-foot"><strong>'+money(product.price)+'</strong><a class="pill outline" href="#studio">Customize</a></div></div>';
-  const link=card.querySelector('a');
-  link.setAttribute('aria-label','Customize '+product.name);
-  link.addEventListener('click',()=>{kit.value=index; refreshPreview()});
-  byId('catalog').append(card);
-  mosaic(card.querySelector('canvas'),samples[index],42);
-});
-mosaic(document.querySelector('[data-art]'),samples[0],68);
-kit.value=1;
-function refreshPreview() {
-  const selected=kits[kit.value];
-  mosaic(byId('preview'),source || samples[kit.value],selected.grid,palette.value);
-  byId('preview-caption').textContent=(source?'Your photo':'Sample artwork')+' · '+palette.value;
-  byId('add').textContent='Add to bag · '+money(selected.price);
-  byId('reset').hidden=!source;
+
+function drawChart(section) {
+  const cell = 25, padding = 34;
+  canvas.width = padding + section.w * cell + 1;
+  canvas.height = padding + section.h * cell + 1;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.font = '11px monospace';
+  ctx.fillStyle = '#251c2e';
+  for (let x = 0; x < section.w; x++) ctx.fillText(section.x + x + 1, padding + (x + .5) * cell, padding / 2);
+  for (let y = 0; y < section.h; y++) {
+    ctx.fillStyle = '#251c2e';
+    ctx.fillText(section.y + y + 1, padding / 2, padding + (y + .5) * cell);
+    for (let x = 0; x < section.w; x++) {
+      const id = pattern.grid[(section.y + y) * pattern.cols + section.x + x];
+      const color = pattern.palette[id].rgb;
+      const px = padding + x * cell, py = padding + y * cell;
+      ctx.fillStyle = rgb(color.map(channel => Math.round(210 + channel * .16)));
+      ctx.fillRect(px, py, cell, cell);
+      ctx.strokeStyle = '#aaa';
+      ctx.strokeRect(px + .5, py + .5, cell, cell);
+      ctx.fillStyle = '#251c2e';
+      ctx.fillText(id + 1, px + cell / 2, py + cell / 2);
+    }
+  }
 }
-photo.addEventListener('change',async()=>{
-  const current=++imageRequest;
-  const file=photo.files[0];
-  if(!file) return;
-  if(!['image/jpeg','image/png','image/webp'].includes(file.type) || file.size>12*1024*1024){
-    photo.value='';
-    byId('status').textContent='Choose a JPG, PNG or WebP image up to 12 MB.';
+
+function render() {
+  const chart = byId('mode').value === 'numbers';
+  byId('tile-nav').hidden = byId('chart-hint').hidden = !chart;
+  byId('surface').classList.toggle('chart', chart);
+  if (!chart) {
+    canvas.setAttribute('aria-label', 'Finished mosaic preview');
+    drawPreview(canvas);
     return;
   }
-  const url=URL.createObjectURL(file);
-  const image=new Image();
-  image.src=url;
-  try{
-    await image.decode();
-    if(current!==imageRequest) return;
-    source=image;
-    refreshPreview();
-    byId('status').textContent='Photo preview ready.';
-  }catch{
-    if(current!==imageRequest) return;
-    photo.value='';
-    byId('status').textContent='This image could not be opened. Try another file.';
-  }finally{URL.revokeObjectURL(url)}
-});
-byId('reset').onclick=()=>{
-  imageRequest++;
-  source=undefined;
-  photo.value='';
-  byId('status').textContent='Sample artwork restored.';
-  refreshPreview();
-};
-kit.onchange=palette.onchange=refreshPreview;
-function renderBag(){
-  const list=byId('items');
-  list.replaceChildren();
-  let count=0, total=0;
-  for(const [key,quantity] of Object.entries(items)){
-    const [index,color,kind]=key.split('|');
-    const product=kits[index];
-    count+=quantity;
-    total+=quantity*product.price;
-    const row=document.createElement('div');
-    row.className='bag-row';
-    const desc=document.createElement('div');
-    const title=document.createElement('strong');
-    title.textContent=product.name;
-    const details=document.createElement('small');
-    details.textContent=color+' · '+(kind==='photo'?'Personalized':'Sample')+' · '+money(product.price);
-    desc.append(title,details);
-    const options=document.createElement('div');
-    const remove=document.createElement('button');
-    remove.className='close';
-    remove.textContent='−';
-    remove.setAttribute('aria-label','Remove one '+product.name);
-    remove.onclick=()=>{
-      if(quantity===1) delete items[key];
-      else items[key]--;
-      updateBag();
-      const buttons=list.querySelectorAll('button');
-      (buttons[Math.min(rowIndex,buttons.length-1)] || byId('close-bag')).focus();
-    };
-    const rowIndex=list.children.length;
-    options.append(document.createTextNode(quantity+' × '),remove);
-    row.append(desc,options);
-    list.append(row);
+  const index = Number(byId('tile').value);
+  byId('prev').disabled = index === 0;
+  byId('next').disabled = index === pattern.sections.length - 1;
+  const section = pattern.sections[index];
+  byId('coordinates').textContent = range(section);
+  canvas.setAttribute('aria-label', 'Numbered placement. ' + range(section));
+  drawChart(section);
+  byId('surface').scrollTo(0, 0);
+}
+
+function makePdf(data) {
+  const mm = 72 / 25.4;
+  const W = 210 * mm, H = 297 * mm;
+  const point = value => Number(value.toFixed(3));
+  const pages = [];
+  let commands = [];
+  function text(value, x, y, size = 10, center = false, mono = false) {
+    const safe = String(value).replaceAll('\\', '\\\\').replaceAll('(', '\\(').replaceAll(')', '\\)');
+    const left = center ? x - String(value).length * size * .3 : x;
+    commands.push('BT /' + (mono ? 'F2' : 'F1') + ' ' + size + ' Tf 1 0 0 1 ' +
+      point(left) + ' ' + point(H - y) + ' Tm (' + safe + ') Tj ET');
   }
-  if(!count) list.textContent='Your bag is empty.';
-  byId('count').textContent=count;
-  byId('total').textContent=money(total);
+  function line(x, y, a, b) {
+    commands.push([point(x), point(H - y), 'm', point(a), point(H - b), 'l S'].join(' '));
+  }
+  function rect(x, y, w, h, mode) {
+    commands.push([point(x), point(H - y - h), point(w), point(h), 're', mode].join(' '));
+  }
+  function page() {
+    pages.push(commands.join('\n') + '\n');
+    commands = ['0 g 0 G'];
+  }
+  text('Tessera Studio / Placement guide', 36, 43, 23);
+  text(data.cols + ' columns x ' + data.rows + ' rows | ' + data.pitch + ' mm cells | ' +
+    data.cols * data.rows + ' beads', 36, 63);
+  text('Print on A4 at Actual size (100%). Check the 50 mm ruler on a placement page.', 36, 85);
+  text('Start at the top-left. Match each cell number to the bead legend below.', 36, 101);
+  text('Bead legend', 36, 126, 14);
+  data.palette.forEach(({rgb: color, count}, index) => {
+    const x = 36 + 175 * (index % 3), y = 148 + 19 * Math.floor(index / 3);
+    commands.push(color.map(channel => point(channel / 255)).join(' ') + ' rg');
+    rect(x, y - 10, 12, 12, 'B');
+    commands.push('0 g');
+    text((index + 1) + '    ' + hex(color) + '    ' + count + ' beads', x + 19, y);
+  });
+  const mapY = 190 + Math.ceil(data.palette.length / 3) * 19;
+  const mapScale = Math.min(510 / data.cols, 270 / data.rows);
+  text('Section map (top-left origin)', 36, mapY, 14);
+  data.sections.forEach((section, index) => {
+    const x = 36 + section.x * mapScale, y = mapY + 14 + section.y * mapScale;
+    rect(x, y, section.w * mapScale, section.h * mapScale, 'S');
+    text(index + 1, x + section.w * mapScale / 2, y + section.h * mapScale / 2 + 3, 9, true, true);
+  });
+  page();
+
+  const cell = data.pitch * mm;
+  const font = Math.min(7, cell * .59);
+  data.sections.forEach((section, index) => {
+    const left = 74, top = 143;
+    text('Section ' + (index + 1) + ' of ' + data.sections.length, 36, 43, 20);
+    text('Rows ' + (section.y + 1) + '-' + (section.y + section.h) +
+      ' / Columns ' + (section.x + 1) + '-' + (section.x + section.w), 36, 65, 11);
+    text('Top of canvas is up. Placement chart at 100% scale.', 36, 83);
+    line(36, 109, 36 + 50 * mm, 109);
+    line(36, 105, 36, 113);
+    line(36 + 50 * mm, 105, 36 + 50 * mm, 113);
+    text('50 mm', 45 + 50 * mm, 112, 9);
+    commands.push('0.68 G 0.25 w');
+    for (let x = 0; x <= section.w; x++) {
+      line(left + x * cell, top, left + x * cell, top + section.h * cell);
+    }
+    for (let y = 0; y <= section.h; y++) {
+      line(left, top + y * cell, left + section.w * cell, top + y * cell);
+    }
+    for (let x = 0; x < section.w; x++) {
+      if (x === 0 || (section.x + x + 1) % 5 === 0) {
+        text(section.x + x + 1, left + (x + .5) * cell, top - 4, 6, true, true);
+      }
+    }
+    for (let y = 0; y < section.h; y++) {
+      text(section.y + y + 1, left - 13, top + (y + .68) * cell, 6, true, true);
+      for (let x = 0; x < section.w; x++) {
+        const id = data.grid[(section.y + y) * data.cols + section.x + x];
+        text(id + 1, left + (x + .5) * cell, top + (y + .69) * cell, font, true, true);
+      }
+    }
+    page();
+  });
+
+  const objects = [
+    '<< /Type /Catalog /Pages 2 0 R >>',
+    '<< /Type /Pages /Count ' + pages.length + ' /Kids [' + pages.map((_, i) => (5 + i * 2) + ' 0 R').join(' ') + '] >>',
+    '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
+    '<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>'
+  ];
+  pages.forEach((body, index) => {
+    objects.push('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ' + point(W) + ' ' + point(H) +
+      '] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ' + (6 + index * 2) + ' 0 R >>');
+    objects.push('<< /Length ' + body.length + ' >>\nstream\n' + body + 'endstream');
+  });
+  let pdf = '%PDF-1.4\n';
+  const offsets = [];
+  objects.forEach((object, i) => {
+    offsets.push(pdf.length);
+    pdf += (i + 1) + ' 0 obj\n' + object + '\nendobj\n';
+  });
+  const start = pdf.length;
+  return pdf + 'xref\n0 ' + (objects.length + 1) + '\n0000000000 65535 f \n' +
+    offsets.map(offset => String(offset).padStart(10, '0') + ' 00000 n \n').join('') +
+    'trailer\n<< /Size ' + (objects.length + 1) + ' /Root 1 0 R >>\nstartxref\n' + start + '\n%%EOF\n';
 }
-function updateBag(){
-  try{localStorage.setItem(storageKey,JSON.stringify(items))}catch{}
-  renderBag();
+
+function download(blob, name) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = name;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
 }
-byId('customizer').onsubmit=event=>{
-  event.preventDefault();
-  const key=[kit.value,palette.value,source?'photo':'sample'].join('|');
-  items[key]=Math.min((items[key] || 0)+1,99);
-  updateBag();
-  bag.showModal();
+
+byId('photo').addEventListener('change', async event => {
+  const file = event.target.files[0];
+  if (!file) return;
+  if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type) || file.size > 20 * 1024 * 1024) {
+    status('Choose a JPG, PNG or WebP file up to 20 MB.');
+    event.target.value = '';
+    return;
+  }
+  const request = ++imageRequest;
+  reading = true;
+  const url = URL.createObjectURL(file);
+  try {
+    const image = new Image();
+    image.src = url;
+    await image.decode();
+    if (request !== imageRequest) return;
+    source = image;
+    reading = false;
+    invalidate();
+    generate();
+  } catch {
+    if (request !== imageRequest) return;
+    event.target.value = '';
+    status('This photo could not be opened. Try another image.');
+  } finally {
+    if (request === imageRequest) reading = false;
+    URL.revokeObjectURL(url);
+  }
+});
+byId('sample').onclick = () => {
+  imageRequest++;
+  reading = false;
+  byId('photo').value = '';
+  source = makeSample();
+  invalidate();
+  generate();
 };
-byId('open-bag').onclick=()=>bag.showModal();
-byId('close-bag').onclick=()=>bag.close();
-refreshPreview();
-renderBag();
+settings.oninput = event => {
+  if (event.target.id !== 'photo') invalidate();
+};
+settings.onsubmit = event => {
+  event.preventDefault();
+  generate();
+};
+byId('mode').onchange = byId('tile').onchange = render;
+byId('prev').onclick = () => { byId('tile').selectedIndex--; render(); };
+byId('next').onclick = () => { byId('tile').selectedIndex++; render(); };
+byId('pdf').onclick = () => download(new Blob([makePdf(pattern)], {type: 'application/pdf'}), 'tessera-placement.pdf');
+byId('png').onclick = () => {
+  const preview = document.createElement('canvas');
+  drawPreview(preview);
+  preview.toBlob(blob => { if (blob) download(blob, 'tessera-mosaic.png'); }, 'image/png');
+};
+byId('csv').onclick = () => {
+  const rows = pattern.palette.map(({rgb: color, count}, index) => [index + 1, hex(color), count].join(','));
+  download(new Blob([['Number,Hex,Beads', ...rows].join('\r\n') + '\r\n'], {type: 'text/csv'}), 'tessera-beads.csv');
+};
+source = makeSample();
+generate();
 </script>
 </body>
 </html>
