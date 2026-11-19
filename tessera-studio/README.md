@@ -2,7 +2,13 @@
 
 Tessera Studio turns a photo into a numbered diamond-painting pattern. It runs in your browser and can be used offline after downloading the HTML file.
 
-[Open the live app](https://tessera-studio-samranjithpauls-projects.vercel.app/)
+**Live website** · [Open Tessera Studio](https://tessera-studio-samranjithpauls-projects.vercel.app/)
+
+## What you can do
+
+- Turn portraits, pet photos, or illustrations into patterns for a physical diamond-painting canvas.
+- Generate a grid from your canvas measurements and bead spacing, then preview the mosaic before printing.
+- Use the bead counts to plan materials and the numbered placement guide to assemble the design.
 
 ## Use it
 
